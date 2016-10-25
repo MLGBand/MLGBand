@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta property="og:url" content="http://teammlg.uqcloud.net/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="MLG Band"/>
+    <meta property="og:description" content="Detect gestures on the fly with your own hardware!"/>
+
+    <title>MLG Band</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">MLG Band</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#contact-form">Download the Source</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#download">Video</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#social">Social</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact-form">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1>MLG Band is an API. <br/>Determine gestures easily, on the fly, with your own hardware.</h1>
+                        <a href="#contact-form" class="btn btn-outline btn-xl page-scroll">Get the source code!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="header-content">
+                    <div class="header-content-inner" id="shake">
+                        <div class="text-center">
+                            <h2 class="text-center new-label"><span class="align">Action: Shake</span></h2>
+                        </div>
+                        <div class="screen">
+                            <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                            <div class="shake-slow shake-constant shake-constant--hover">
+                                <img src="img/bandhand.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <p>
+                        <pre>{
+  "detected-gesture-confidence": {
+    "shake": 93,
+    "resting": 2,
+    "screw-in": 2,
+    "screw-out": 2,
+    "custom-gesture": 1
+  }
+}</pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="download" class="download bg-primary text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="section-heading">Don't believe us?</h2>
+                <h3>See our demo video!</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://youtube.com/embed/5C_GULdiQrM"></iframe>
+                </div>
+                <div class="badges">
+                    <!--
+                    <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                    <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h2>We do the hard work<br/>so you don't have to</h2>
+                    <p class="text-muted">MLG Band software sits on your hardware, allowing developers to be aware of their user's actions in real time.</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/mlghand_flipped.png" class="img-responsive" alt="">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="icon-magic-wand text-primary"></i>
+                                <h3>Magical</h3>
+                                <p class="text-muted">Fully trained neural networks and code ready to go on your
+                                    hardware, it's like magic</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="icon-graph text-primary"></i>
+                                <h3>Predict Performance</h3>
+                                <p class="text-muted">Need confidence levels? Want to see a verbose output? Just say the
+                                    command.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="icon-present text-primary"></i>
+                                <h3>Complete</h3>
+                                <p class="text-muted">Everything you need is in our code. Need an extra gesture? Add it
+                                    in!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="icon-lock-open text-primary"></i>
+                                <h3>Open Source</h3>
+                                <p class="text-muted">Minds are like parachutes, they're better when they're open. Our
+                                    code is no exception.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="cta">
+    <div class="cta-content">
+        <div class="container">
+            <h2>Interested?<br>Start building.</h2>
+            <a href="#contact-form" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section id="social" class="contact bg-primary">
+    <div class="container">
+        <h2>Share the <i class="fa fa-heart"></i> to social media</h2>
+        <ul class="list-inline list-social">
+            <li class="social-twitter">
+                <a href="https://twitter.com/intent/tweet?text=Gesture%20Recognition...%20as%20a%20service!%20No%20need%20to%20learn%20ML!%20http://teammlg.uqcloud.net/%20#UQ%20#ML"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="social-facebook">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fteammlg.uqcloud.net%2F"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="social-google-plus">
+                <a href="https://plus.google.com/share?url=teammlg.uqcloud.net"><i class="fa fa-google-plus"></i></a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact-form" class="contact-form bg-form">
+    <div class="container">
+        <h3 class="text-center">Fill out the form below to get early access to the API!</h3>
+        <br />
+
+        <form class="form-horizontal" id="contact-form-form" role="form" action="send_formdata.php" method="POST">
+            <fieldset>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="name">Full Name</label>
+                    <div class="col-md-4">
+                        <input id="name" name="name" type="text" placeholder="Joe Bloggs" class="form-control input-md">
+                        <span class="help-block">We like to call people by their name</span>
+                    </div>
+                </div>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="profession">Profession</label>
+                    <div class="col-md-4">
+                        <select id="profession" name="profession" class="form-control">
+                            <option value="1">Backend Developer</option>
+                            <option value="2">Frontend Developer</option>
+                            <option value="3">Student</option>
+                            <option value="4">Business Analyst</option>
+                            <option value="5">Other Technical</option>
+                            <option value="6">Other Non-Technical</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="birth">Birth Year</label>
+                    <div class="col-md-4">
+                        <input id="birth" name="birth" type="text" placeholder="1995"
+                               class="form-control input-md">
+                        <span class="help-block">Spot the faster/young learners!</span>
+                    </div>
+                </div>
+
+                <!-- Multiple Radios (inline) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="technical">Technical Skill</label>
+                    <div class="col-md-4">
+                        <label class="radio-inline" for="technical-0">
+                            <input type="radio" name="technical" id="technical-0" value="1" checked="checked">
+                            1 (Poor)
+                        </label>
+                        <label class="radio-inline" for="technical-1">
+                            <input type="radio" name="technical" id="technical-1" value="2">
+                            2
+                        </label>
+                        <label class="radio-inline" for="technical-2">
+                            <input type="radio" name="technical" id="technical-2" value="3">
+                            3
+                        </label>
+                        <label class="radio-inline" for="technical-3">
+                            <input type="radio" name="technical" id="technical-3" value="4">
+                            4
+                        </label>
+                        <label class="radio-inline" for="technical-4">
+                            <input type="radio" name="technical" id="technical-4" value="5">
+                            5 (Excellent)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Multiple Checkboxes -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="languages">Languages Known</label>
+                    <div class="col-md-4">
+                        <div class="checkbox">
+                            <label for="checkboxes-0">
+                                <input type="checkbox" name="languages[]" id="checkboxes-0" value="1">
+                                C/C++
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="checkboxes-1">
+                                <input type="checkbox" name="languages[]" id="checkboxes-1" value="2">
+                                Python
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="checkboxes-2">
+                                <input type="checkbox" name="languages[]" id="checkboxes-2" value="3">
+                                Java
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="checkboxes-3">
+                                <input type="checkbox" name="languages[]" id="checkboxes-3" value="4">
+                                Go
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="checkboxes-4">
+                                <input type="checkbox" name="languages[]" id="checkboxes-4" value="5">
+                                Perl
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="checkboxes-5">
+                                <input type="checkbox" name="languages[]" id="checkboxes-5" value="6">
+                                PHP
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">Postcode</label>
+                    <div class="col-md-4">
+                        <input id="postcode" name="postcode" type="text" placeholder="4067"
+                               class="form-control input-md">
+                        <span class="help-block">Help us know where our users are!</span>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">Email Address</label>
+                    <div class="col-md-4">
+                        <input id="email" name="email" type="text" placeholder="not-a-fake@email.com"
+                               class="form-control input-md">
+                        <span class="help-block">We won't send spam, only love</span>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <button id="submit" name="submit" class="btn btn-primary">Send Away!</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <ul class="list-inline">
+            <li>
+                <a href="http://www.uq.edu.au/terms-of-use/">Terms</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>

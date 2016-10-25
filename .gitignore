@@ -1,0 +1,6 @@
+AnnotationCollection/AnnotationCollection/obj/
+AnnotationCollection/AnnotationCollection/bin/
+GestureAdapter/GestureAdapter/obj/
+GestureAdapter/GestureAdapter/bin/
+*.suo
+*.DS_Store

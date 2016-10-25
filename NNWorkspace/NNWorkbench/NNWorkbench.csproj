@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E51248D2-046B-4B4E-B190-049A623594D8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NNWorkbench</RootNamespace>
+    <AssemblyName>NNWorkbench</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datasets\Dataset.cs" />
+    <Compile Include="Datasets\GestureDataset.cs" />
+    <Compile Include="NeuralNetworks\GateTrainingState.cs" />
+    <Compile Include="NeuralNetworks\Gate.cs" />
+    <Compile Include="NeuralNetworks\GateState.cs" />
+    <Compile Include="NeuralNetworks\LSTMLayer.cs" />
+    <Compile Include="NeuralNetworks\LSTMState.cs" />
+    <Compile Include="NeuralNetworks\LSTMTrainingState.cs" />
+    <Compile Include="NeuralNetworks\SerialisationExtensions.cs" />
+    <Compile Include="NeuralNetworks\SoftmaxLayer.cs" />
+    <Compile Include="NeuralNetworks\SoftmaxState.cs" />
+    <Compile Include="NeuralNetworks\SoftmaxTrainingState.cs" />
+    <Compile Include="NeuralNetworks\TrainingState.cs" />
+    <Compile Include="Paths.cs" />
+    <Compile Include="NeuralNetworks\FeedForwardLayer.cs" />
+    <Compile Include="NeuralNetworks\FeedForwardState.cs" />
+    <Compile Include="NeuralNetworks\FeedForwardTrainingState.cs" />
+    <Compile Include="NeuralNetworks\Layer.cs" />
+    <Compile Include="NeuralNetworks\NetworkState.cs" />
+    <Compile Include="NeuralNetworks\NetworkTrainingState.cs" />
+    <Compile Include="Preprocessing\GesturePreprocessor.cs" />
+    <Compile Include="Preprocessing\HeadingDifferentialPreprocessor.cs" />
+    <Compile Include="Preprocessing\InputDataFrame.cs" />
+    <Compile Include="Preprocessing\NormalisationTransformation.cs" />
+    <Compile Include="Preprocessing\Quaterion.cs" />
+    <Compile Include="Preprocessing\RealignmentTransformation.cs" />
+    <Compile Include="Preprocessing\SubsamplingTransformation.cs" />
+    <Compile Include="Testing\NetworkTrainer.cs" />
+    <Compile Include="Datasets\TrainingFrame.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NeuralNetworks\RecurrentNetwork.cs" />
+    <Compile Include="NeuralNetworks\RecurrentLayer.cs" />
+    <Compile Include="NeuralNetworks\RecurrentState.cs" />
+    <Compile Include="NeuralNetworks\RecurrentTrainingState.cs" />
+    <Compile Include="Datasets\Frame.cs" />
+    <Compile Include="Datasets\TrainingSample.cs" />
+    <Compile Include="Testing\NetworkConfiguration.cs" />
+    <Compile Include="Testing\NetworkEvaluator.cs" />
+    <Compile Include="Testing\NetworkScorer.cs" />
+    <Compile Include="Training\ParallelNetworkTrainer.cs" />
+    <Compile Include="Testing\RandomType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
