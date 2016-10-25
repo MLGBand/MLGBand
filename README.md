@@ -3,7 +3,7 @@
 ## Overview
 The **Gesture Recognition API** provides gesture recognition functionality for wrist-mounted embedded devices.
 
-It uses a simplified neural network to detect which gesture is being performed, and outputs probability values to the host device (e.g. desktop computer, mobile). This guide is split into three parts. The first covers the gesture recognition API. The second covers the demo application. The third is a code guide of what can be found in this git repository.
+It uses a neural network to detect which gesture is being performed, and outputs probability values to the host device (e.g. desktop computer, mobile). This guide is split into three parts. The first covers the gesture recognition API. The second covers the demo application. The third is a code guide of what can be found in this git repository.
 
 ## Gesture API
 
@@ -200,3 +200,12 @@ Preprocessing </td>
 	</tr>
 
 </table>
+
+## Improving and extending the gesture set
+
+Neural Networks can be trained and exported using the NNWorkbench tool.
+
+The data used to train the published network is available for you to use here:
+https://drive.google.com/drive/u/0/folders/0BxgQ4LM2qgB9c0xjNUZfX3EwNGc
+
+You can collect your own data using the DataCollection app provided in the Arduino/Examples folder.
