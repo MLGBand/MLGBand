@@ -5,6 +5,9 @@ The **Gesture Recognition API** provides gesture recognition functionality for w
 
 It uses a neural network to detect which gesture is being performed, and outputs probability values to the host device (e.g. desktop computer, mobile). This guide is split into three parts. The first covers the gesture recognition API. The second covers the demo application. The third is a code guide of what can be found in this git repository.
 
+See our semi-awful video demonstration:
+https://www.youtube.com/watch?v=5C_GULdiQrM
+
 ## Gesture API
 
 ### Hardware Requirements
